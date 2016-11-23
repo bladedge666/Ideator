@@ -8,9 +8,9 @@ class IdeasController < ApplicationController
     # @idea = Idea.create(params[:idea])
     @idea = Idea.create(idea_params)
     if @idea.valid?
-      # implement later
+      flash[:success] = "Hoorah! You created a new Idea..."
     else
-      # implement later 
+      flash[:alert] = "Failed!!! Something is wrong with your input data"
     end
     redirect_to root_path
   end
@@ -22,8 +22,10 @@ class IdeasController < ApplicationController
   def update
     @idea = Idea.find(params[:id])
     if @idea.update(idea_params)
+      flash[:success] = "Successfully updated the Idea..."
       redirect_to root_path
     else
+      flash[:alert] = "Failed to update the Idea..."
       redirect_to edit_idea_path(params[:id])
     end
   end 
@@ -31,6 +33,7 @@ class IdeasController < ApplicationController
   def destroy
     @idea = Idea.find(params[:id])
     @idea.destroy
+    flash[:notice] = "Successfully deleted the Idea..."
     redirect_to root_path
   end
 

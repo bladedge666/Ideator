@@ -13,7 +13,7 @@ html, body {
 }
 
 .navbar-default .navbar-brand {
-  font-weight: 100; 
+  font-weight: 600; 
   font-size: 30px;
   letter-spacing: 5px;
   color: $main-blue;
@@ -23,7 +23,13 @@ html, body {
     letter-spacing: 5px;
 }
 
-
+.navbar-right li:hover {
+  // background: #fee2C6;
+  border-radius: 7px;
+  background: #ACC7DF;
+  transition-delay: 50ms;
+  transition-duration: 300ms;
+ }
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -52,4 +58,27 @@ body {
 .footer span {
   letter-spacing:5px; 
   font-size: 20px;
+}
+
+
+.panel-body {
+  // background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  // background: -webkit-linear-gradient(top, rgba(100, 100, 100,.3), rgba(220,220,220,.6));
+  background: rgba(180, 180, 210, 0.1);
+}
+
+#about {
+  text-align: justify;
+}
+
+.btn-block {
+  margin: 10px 0;
+}
+
+// .idea-desc {
+//   font-size: 1.5em;
+// }
+
+.panel-body p {
+  font-size: 1.4em;
 }

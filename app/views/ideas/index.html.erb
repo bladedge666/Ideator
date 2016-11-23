@@ -1,6 +1,6 @@
 <%= simple_form_for Idea.new do |f| %>
 
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#myModal">
   Add Idea
 </button>
 
@@ -25,7 +25,6 @@
 <% end %>
 
 <% @ideas.each do |idea| %>
-<div class="container">
   <div class="panel panel-default">
     <div class="panel-body">
       <blockquote>
@@ -39,7 +38,6 @@
       </div>
     </div>
   </div>
-</div>
 <% end %>
 
 <div class="text-center">

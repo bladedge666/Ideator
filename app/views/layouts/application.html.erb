@@ -13,9 +13,14 @@
 
   <div id="wrap">
     <%= render 'shared/nav' %>
-    
-    <%= yield %>
-  
+    <div class = "container">
+      <div class = "row">
+        <div class = "col-xs-12 col-md-8 col-md-offset-2">
+          <%= render 'shared/flash' %>
+          <%= yield %>
+        </div>
+      </div>
+    </div>  
   </div> <!-- #Wrap -->
   
   <%= render 'shared/footer' %>
