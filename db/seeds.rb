@@ -5,3 +5,5 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+ideas = Idea.create([{ description: 'A good idea', author: :Srijal }, { description: "Another good idea.", author: :Shreyansh}])
