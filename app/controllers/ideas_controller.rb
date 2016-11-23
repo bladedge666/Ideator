@@ -7,6 +7,11 @@ class IdeasController < ApplicationController
     # @idea = Idea.create(description: params[:idea][:description], author: params[:idea][:description])
     # @idea = Idea.create(params[:idea])
     @idea = Idea.create(idea_params)
+    if @idea.valid?
+      # implement later
+    else
+      # implement later
+    end
     redirect_to root_path
   end
 
