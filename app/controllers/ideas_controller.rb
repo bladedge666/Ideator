@@ -10,7 +10,7 @@ class IdeasController < ApplicationController
     if @idea.valid?
       # implement later
     else
-      # implement later
+      # implement later 
     end
     redirect_to root_path
   end
@@ -28,6 +28,11 @@ class IdeasController < ApplicationController
     end
   end 
 
+  def destroy
+    @idea = Idea.find(params[:id])
+    @idea.destroy
+    redirect_to root_path
+  end
 
   private
 
