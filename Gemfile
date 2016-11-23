@@ -15,6 +15,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 
 gem 'simple_form'
 
+gem 'will_paginate', '~> 3.1.0'
+
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
