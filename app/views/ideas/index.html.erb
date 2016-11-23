@@ -1,5 +1,13 @@
+<%= simple_form_for Idea.new do |f| %>
+  <%= f.input :description %>
+  <%= f.input :author %>
+  <%= f.submit 'Submit', class: 'btn btn-lg btn-primary' %>
+<% end %>
+
+
 <% @ideas.each do |idea| %>
-  <div class="panel panel-default col-md-8 col-md-offset-2">
+<div class="container">
+  <div class="panel panel-default">
     <div class="panel-body">
       <blockquote>
         <p><%= idea.description %></p>
@@ -7,4 +15,5 @@
       </blockquote>
     </div>
   </div>
+</div>
 <% end %>
